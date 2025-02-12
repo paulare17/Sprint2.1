@@ -4,10 +4,45 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" src="./src/style.css">
+    <title>Sprint 2.1</title>
   </head>
   <body>
-    <h2>Exercici 1</h2>
-    <script type="module" src="/src/main.js"></script>
+
+    <h1>Exercici 1.1</h1>
+    <h2>Nivell 1</h2>
+    <h3>Exercici 1</h3>
+    <p>Número 1:</p>
+    <input type="number" id="numero1" /><br>
+    <p>Número 2:</p>
+    <input type="number" id="numero2" />
+    <input type="button" value="Suma" onclick="Suma()"><br>
+    <div id="result1"></div>
+
+    <h3>Exercici 2</h3>
+    <p>Fes aparèixer un número aleatori entre el 0 i el 100:</p> 
+    <div id="result2"></div>
+    <input type="button" value="Genera número" onclick="GeneraNumero()">
+
+    <h3>Exercici 3</h3>
+    <p>Introdueix el seu nom:</p>
+    <input type="text" id="nom" placeholder="El teu nom"/>
+    <input type="button" value="Saluda" onclick="Greet()">
+    <div id="result3"></div>
+
+    <h2>Nivell 2</h2>
+    <p>(Consultar consola per visualitzar els exercicis)</p>
+    <h3>Exercici 4</h3>
+    <input type="button" value="Mostra números" onclick="PrintNumbers(arrayNumbers)">
+
+    <h2>Nivell 3</h2>
+    <h3>Exercici 5</h3>
+    <input type="button" value="Compta fins a 3" onclick="Espera()">
+
+
+
+
+    <script src="/src/js/ex1.js"></script>
+    <script src="/src/js/ex2.js"></script>
   </body>
 </html>
