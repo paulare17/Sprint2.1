@@ -1,23 +1,42 @@
-<h1>Exercici 1.1</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Exercici 1.1</h1>
     <h2>Nivell 1</h2>
     <h3>Exercici 1</h3>
-    <label>Número 1:</label>
+    <p>Número 1:</p>
     <input type="number" id="numero1" /><br>
-    <label>Número 2:</label>
-    <input type="number" id="numero2" /><br>
-    <input type="button" value="Suma" onclick="Suma()">
-    <br>
+    <p>Número 2:</p>
+    <input type="number" id="numero2" />
+    <input type="button" value="Suma" onclick="Suma()"><br>
     <div id="result1"></div>
-
+    
     <h3>Exercici 2</h3>
-    <label>Fes aparèixer un número aleatori entre el 0 i el 100:</label> 
+    <p>Fes aparèixer un número aleatori entre el 0 i el 100:</p> 
     <div id="result2"></div>
     <input type="button" value="Genera número" onclick="GeneraNumero()">
-
-    <h3>Exercici 3</h3>
-    <label>Introdueix el seu nom:</label>
-    <input type="text" id="nom" placeholder="El teu nom"/>
-
-    <input type="button" value="Saluda" onclick="Greet()">
     
+    <h3>Exercici 3</h3>
+    <p>Introdueix el seu nom:</p>
+    <input type="text" id="nom" placeholder="El teu nom"/>
+    <input type="button" value="Saluda" onclick="Greet()">
     <div id="result3"></div>
+    
+    <h2>Nivell 2</h2>
+    <p>(Consultar consola per visualitzar els exercicis)</p>
+    <h3>Exercici 4</h3>
+    <input type="button" value="Mostra números" onclick="PrintNumbers(arrayNumbers)">
+    
+    <h2>Nivell 3</h2>
+    <h3>Exercici 5</h3>
+    <input type="button" value="Compta fins a 3" onclick="Espera()">
+    
+    <script src="/src/js/ex1.js"></script>
+</body>
+</html>
