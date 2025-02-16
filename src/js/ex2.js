@@ -20,14 +20,39 @@ function numGran() {
 
 }
 
-// Exercici 3
+// Exercici 3 (A)
 
-function trobarMaxim() {
-    let num = document.getElementById('num').value
+function Discernir() {
+    let num = parseInt(document.getElementById('num').value)
 
     const valorNum = (num == 0) ? "El número és zero" : ((num > 0) ? "El número és positiu" : "El número és negatiu");
     document.getElementById("result3").innerHTML = valorNum;
 }   
+
+// Exercici 3 (B)
+
+function trobarMaxim(a, b, c) {
+    
+    if (a == b || a == c || b == c) {
+        document.getElementById('result5').innerHTML = "No pots introduïr números que siguin iguals"
+    }
+    
+    const maxim = (a > b) 
+    ? ((a > c) ? `El número més gran és el ${a}` : `El número més gran és el ${c}`) 
+    : ((b > c) ? `El número més gran és el ${b}` : `El número més gran és el ${c}` );
+    
+    document.getElementById('result5').innerHTML = maxim
+    
+}
+
+function capturaValors() {
+    const numA = parseInt(document.getElementById("num4").value)
+    const numB = parseInt(document.getElementById("num5").value)
+    const numC = parseInt(document.getElementById("num6").value)
+
+    trobarMaxim(numA, numB, numC);
+
+}
 
 // Exercici 4
 const arrayNums = [];
